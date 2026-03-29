@@ -1,5 +1,6 @@
 // Import required packages
 // express: Web framework to create API server
+// (minor note: this is the backend API entrypoint)
 const express = require("express");
 // cors: Allows frontend (hosted on different port) to communicate with backend
 const cors = require("cors");
