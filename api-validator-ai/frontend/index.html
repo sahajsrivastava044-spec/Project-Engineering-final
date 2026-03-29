@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>API Validator AI</title>
+
+  <!-- CSS Styling: Makes the UI look clean and professional -->
+  <style>
+    /* Body styling: Centers content, limits width for readability -->
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;  /* Prevents text from being too wide -->
+      margin: 40px auto;  /* Centers the page content -->
+      padding: 20px;  /* Space inside the page -->
+      background: #f4f4f4;  /* Light gray background -->
+    }
+
+    /* Center the title -->
+    h1 {
+      text-align: center;
+    }
+
+    /* Textarea styling: Where users paste their API requirements -->
+    textarea {
+      width: 100%;  /* Takes full width -->
+      height: 150px;  /* Space for user to type requirements -->
+      padding: 10px;  /* Internal spacing -->
+      font-family: monospace;  /* Code-style font for clarity -->
+      margin-bottom: 10px;  /* Space below textarea -->
+    }
+
+    /* Button styling: Make it obvious and clickable -->
+    button {
+      padding: 10px 20px;  /* Make button bigger and easier to click -->
+      cursor: pointer;  /* Show pointer icon on hover -->
+    }
+
+    /* Output area: Where we display the generated validation code -->
+    #output {
+      margin-top: 20px;  /* Space above output -->
+      background: #222;  /* Dark background like terminal/console -->
+      color: #0f0;  /* Green text like hacker terminal -->
+      padding: 15px;  /* Space inside the box -->
+      white-space: pre-wrap;  /* Preserve code formatting (spaces, newlines) -->
+      min-height: 100px;  /* Minimum height so output looks substantial -->
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main heading -->
+  <h1>API Validator AI</h1>
+  
+  <!-- Form Section -->
+
+  <!-- Input textarea: User types/pastes their API requirements here -->
+  <!-- id="input": CSS and JavaScript refer to this element by this ID -->
+  <textarea id="input" placeholder='Paste JSON or API input here...'></textarea>
+
+  <!-- Button: User clicks to trigger validation generation -->
+  <!-- onclick calls the generateValidation() function from script.js -->
+  <button onclick="generateValidation()">Generate Validation</button>
+
+  <!-- Output area: JavaScript will update this div with generated code -->
+  <!-- id="output": JavaScript targets this element to display results -->
+  <div id="output">Your validation code will appear here...</div>
+
+  <!-- Result display section ends above -->
+
+  <!-- Load JavaScript file: script.js contains the logic for the button click -->
+  <script src="script.js"></script>
+</body>
+</html>
