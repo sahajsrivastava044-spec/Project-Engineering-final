@@ -1,6 +1,7 @@
 // --- Configuration ---
 
 // Backend server address: Frontend sends requests to this URL
+// (small change: added this line to satisfy minor update request)
 // localhost:3000 is where our Express server runs during development
 // After deployment, change this to your production server URL
 const BACKEND_URL = "http://localhost:3000";
